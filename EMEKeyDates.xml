@@ -1,0 +1,24 @@
+<data>
+    <event start="July 28 2006"  end="May 01 2007" title="EME version 1.0" color="blue">
+    </event>
+    <event start="May 01 2007"  end="July 03 2007" title="EME version 2.0" color="blue">
+    </event>
+    <event start="June 22 2007"  title="First-place Award for Best Embedded GIS Application at the ESRI Software Applications Fair" color="red">
+    </event>
+    <event start="July 03 2007"  end="October 31 2008" title="EME version 2.1" color="blue">
+    </event>
+    <event start="September 01 2007"  title="ArcUser magazine features EME" color="green">
+    </event>
+    <event start="October 20 2008"  title="Government Computer News (GCN) 2008 Agency Award" color="red">
+    </event>
+    <event start="October 31 2008" end="April 01 2011" title="EME version 3.0" color="blue">
+    </event>
+    <event start="April 01 2011"  end="July 27 2011" title="EME version 3.1" color="blue">
+    </event>
+    <event start="July 27 2011" end="November 10 2011" title="EME version 3.1.1" color="blue">
+    </event>
+    <event start="November 10 2011"  end="February 15 2013" title="EME version 3.1.2" color="blue">
+    </event>
+    <event start="March 20 2013"  title="EME version 3.2" color="blue">
+    </event>    
+</data>

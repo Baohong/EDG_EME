@@ -1,0 +1,33 @@
+
+.exhibit-tabularView-body{
+    background-color:#F2F2F5;
+    border-width:2px 1px 0px 1px;
+    border-color:#C9CBD3;
+    border-style:solid;
+    border-collapse: collapse;
+}
+
+.exhibit-tabularView-body td {
+    color:#000000;
+    font-family:Verdana,Arial,Helvetica,Geneva,sans-serif;
+    font-size:9pt;
+    padding:4px;
+	color:1a579c;
+    background-color:#F2F2F5;
+    border-color:#ffffff #ffffff #cccccc #ffffff;
+    border-style:solid solid solid solid;
+    border-width:1px 0px 1px 0px;
+    text-align: left;
+}
+
+.exhibit-tabularView-body th {
+    font-family:Verdana,Arial,Helvetica,Geneva,sans-serif;
+    font-size:9pt;
+    padding:8px;
+    background-color:#CFE0F1;
+    border-color:#ffffff #ffffff #cccccc #ffffff;
+    border-style:solid solid solid none;
+    border-width:1px 0px 1px 0px;
+    white-space:nowrap;
+    text-align: left;
+}

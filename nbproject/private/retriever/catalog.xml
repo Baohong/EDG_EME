@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd" uri="schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd"/>
+    <system systemId="http://schemas.opengis.net/xlink/1.0.0/xlinks.xsd" uri="schemas.opengis.net/xlink/1.0.0/xlinks.xsd"/>
+    <system systemId="http://schemas.opengis.net/filter/1.0.0/filter.xsd" uri="schemas.opengis.net/filter/1.0.0/filter.xsd"/>
+    <system systemId="http://schemas.opengis.net/gml/2.1.2/geometry.xsd" uri="schemas.opengis.net/gml/2.1.2/geometry.xsd"/>
+    <system systemId="http://schemas.opengis.net/filter/1.0.0/expr.xsd" uri="schemas.opengis.net/filter/1.0.0/expr.xsd"/>
+    <system systemId="http://schemas.opengeospatial.net/sld/1.0.0/StyledLayerDescriptor.xsd" uri="schemas.opengeospatial.net/sld/1.0.0/StyledLayerDescriptor.xsd"/>
+    <system systemId="http://schemas.opengeospatial.net/xlink/1.0.0/xlinks.xsd" uri="schemas.opengeospatial.net/xlink/1.0.0/xlinks.xsd"/>
+    <system systemId="http://schemas.opengeospatial.net/filter/1.0.0/filter.xsd" uri="schemas.opengeospatial.net/filter/1.0.0/filter.xsd"/>
+    <system systemId="http://schemas.opengeospatial.net/gml/2.1.2/geometry.xsd" uri="schemas.opengeospatial.net/gml/2.1.2/geometry.xsd"/>
+    <system systemId="http://schemas.opengeospatial.net/filter/1.0.0/expr.xsd" uri="schemas.opengeospatial.net/filter/1.0.0/expr.xsd"/>
+</catalog>

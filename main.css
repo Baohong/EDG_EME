@@ -1,0 +1,219 @@
+<META http-equiv="Content-Style-Type" content="text/css">
+* html .visualIEFloatFix { height: 0.01%; }
+.header {
+	background-color: #3F6B95;
+}
+body {
+	background-image:url('images/bgd_body.png');
+	background-repeat: no-repeat;
+	background-color: #4A5B63;
+	color: #777777;
+	font-family: "Lucida Grande",Geneva,Verdana,Arial,Helvetica,sans-serif;
+	font-size: 100%;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1.5;
+	padding: 0pt;
+	background-color: #4A5B63;
+	font-size:10pt;
+	font-style:bold;
+	background: #3F6B95;
+	margin: 0;
+	
+}
+a:link, a:visited {
+	border-bottom:1px dotted;
+	color:#3d5e84;
+	font-weight:bold;
+	text-decoration:none;
+}
+#plain {
+	border-bottom:none;
+	text-decoration:none;
+}
+a:hover, a:focus {
+	border-bottom-style:solid;
+	color:#D03900;
+	font-size: 100%;
+}
+h1 {
+	color:#CC3333;
+	font-weight:normal;
+	font-size:14pt;
+	font:Verdana;
+}
+
+table {
+	text-align: left;
+	background-color: #FFF;
+	color: #777777;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-size: xx-small;
+	vertical-align:text-top;
+}
+
+/**
+ * helper classes (IE Fix)
+ */
+.clearfix:after {
+	clear:both;
+	content:".";
+	display:block;
+	height:0pt;
+	visibility:hidden;
+}
+.clearfix {
+}
+.clearfix {
+	display:block;
+}
+.nowrap {white-space: nowrap;}
+
+
+#frmBanner {
+	float: right;
+}
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+.content {
+	width: 940px;
+	float: left;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	border-top-width: thick;
+	border-right-width: thick;
+	border-bottom-width: 25px;
+	border-left-width: thick;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #4C7283;
+	border-right-color: #4A5B63;
+	border-bottom-color: #4A5B63;
+	border-left-color: #4A5B63;
+	background-color: #FFF;
+}
+
+li {
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	color: #507D99;
+}
+#nav-menu
+{
+	width:960px;
+	color: #FFF;
+	background-color: #999;
+	padding:0px;
+}
+
+.HeaderMenu a {
+	color: #FFF;
+	font-size: small;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	width: 960px;
+	padding:0px;
+	background: #4A5B63;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	background-color: #4A5B63;
+}
+.content .footerNav a {
+font-size:7.5pt;
+color:#435258;
+padding:0px;
+}
+.container .footer table tr td {
+	color: #FFF;
+	background-color: #4A5B63;
+	font-size: 13px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	height: auto;
+	text-align: center;
+	vertical-align:text-top;
+	font-size: small;
+	background-color: #4A5B63;
+	font-weight:normal;
+}
+.container .content table tr td {
+	background-color: #FFF;
+	font-weight:normal;
+	font-size: small;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	text-align: left;
+	color: #777777;
+	padding:0px;
+}
+#highlight {
+	background-color: #b8c5c9;
+	color: #000000;
+	vertical-align:text-top;
+	font-weight:normal;
+	font-size: small;
+	border-style: dashed;
+	border-color: #777777;
+	border-width: 1px;
+	text-align: left;
+	padding:6px;
+
+}
+.container .header .HeaderMenu {
+	text-align: right;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #356493;
+}
+.container .content div {
+	background-color: white;
+}
+.container .footer table tr td a {
+	color: #FFF;
+}
+/*added later by deewen*/
+#upperMenu{
+    margin-top : -20px;
+    color: #FFF;
+    top:24px;
+    z-index: 100;
+    position: relative;
+    float:right;
+    padding-right: 10px;
+}
+
+#upperMenu a {
+    border-bottom: 1px dotted;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+#upperMenu a:hover {
+    border-bottom: 1px solid;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+}

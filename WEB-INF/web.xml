@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="EME" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <display-name>EPA Metadata Editor</display-name>
+  
+ 
+    <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>ByCountry</servlet-name>
+	<jsp-file>/ByCountry.jsp</jsp-file>
+    </servlet>
+
+<servlet-mapping>
+  <servlet-name>ByCountry</servlet-name>
+  <url-pattern>/ByCountry.js</url-pattern>
+</servlet-mapping>
+
+    <servlet>
+        <servlet-name>ByDate</servlet-name>
+	<jsp-file>/ByDate.jsp</jsp-file>
+    </servlet>
+
+<servlet-mapping>
+  <servlet-name>ByDate</servlet-name>
+  <url-pattern>/ByDate.js</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+        <servlet-name>jsonServer</servlet-name>
+        <jsp-file>/jspClasses/jsonServer.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>jsonServer</servlet-name>
+        <url-pattern>/jsonServer.js</url-pattern>
+    </servlet-mapping>
+ <servlet>
+        <servlet-name>jsonDownloadDetails</servlet-name>
+        <jsp-file>/json/jsonDownloadDetails.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>jsonDownloadDetails</servlet-name>
+        <url-pattern>/json/jsonDownloadDetails.json</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>jsonDownloadCountByState</servlet-name>
+        <jsp-file>/json/jsonDownloadCountByState.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>jsonDownloadCountByState</servlet-name>
+        <url-pattern>/json/jsonDownloadCountByState.json</url-pattern>
+    </servlet-mapping>
+<context-param>
+    <description>This is the filesystem path to the directory where EME files are located. Include trailing slash.
+    EME files include the mdb that contains download data and the downloadable files.
+    This should be a location that CANNOT be accessed directly by a URL.
+    </description>
+    <param-name>EmeFilesPath</param-name>
+    <param-value>D:\Public\Server\tomcat7042\webapps\EME\WEB-INF\EME_files\</param-value>
+</context-param>
+<context-param>
+        <description>Where to find credentials. Accepted values:
+                header.uid - If a header named uid is present and the value is not the
+                    value of the anonymous user (specified in another parameter), allow restricted access.
+                fixed.public - Only public access allowed
+                fixed.restricted - all access allowed
+        </description>
+        <param-name>authenLoc</param-name>
+        <param-value>header.uid</param-value>
+    </context-param>
+
+
+</web-app>
+  

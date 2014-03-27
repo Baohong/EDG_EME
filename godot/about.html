@@ -1,0 +1,313 @@
+<!DOCTYPE html><html lang="en"><!-- InstanceBegin template="/Templates/eme.dwt" codeOutsideHTMLIsLocked="false" -->
+    <!--EPA Template, OneEPA Web, 17 November 2010 -->
+    <head> 
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+        
+          <!--Added by Netty-->
+        <!--<script src="/simile_new/timeline_2.3.0/timeline_js/timeline-api.js?bundle=true" type="text/javascript"></script>-->
+        <script src="/simile_new/exhibit/api/extensions/timeline_2.3.0/src/webapp/api/timeline-api.js?bundle=false&timeline-use-local-resources=true" type="text/javascript"></script>
+     
+        <script>
+Timeline.DefaultEventSource.Event.prototype.fillTime = function(elmt,
+labeller) {
+        if (this._instant) {
+            if (this.isImprecise()) {
+               
+elmt.appendChild(elmt.ownerDocument.createTextNode(this.getProperty("start")));
+                elmt.appendChild(elmt.ownerDocument.createElement("br"));
+               
+elmt.appendChild(elmt.ownerDocument.createTextNode(this.getProperty("end")));
+            } else {
+               
+elmt.appendChild(elmt.ownerDocument.createTextNode(this.getProperty("start")));
+            }
+        } else {
+            if (this.isImprecise()) {
+                elmt.appendChild(elmt.ownerDocument.createTextNode(
+                    this.getProperty("start") + " ~ " +
+this.getProperty("latestStart")));
+                elmt.appendChild(elmt.ownerDocument.createElement("br"));
+                elmt.appendChild(elmt.ownerDocument.createTextNode(
+                    this.getProperty("earliestEnd") + " ~ " +
+this.getProperty("end")));
+            } else {
+               
+elmt.appendChild(elmt.ownerDocument.createTextNode(this.getProperty("start")));
+                elmt.appendChild(elmt.ownerDocument.createElement("br"));
+               
+elmt.appendChild(elmt.ownerDocument.createTextNode(this.getProperty("end")));
+            }
+        }
+    };
+</script>
+        <script type="text/javascript" src="javaScripts/loadTimeline.js"> </script>
+
+        <!-- InstanceBeginEditable name="title" -->
+        <title> About | EPA Metadata Editor | US EPA</title>
+        <!-- InstanceEndEditable --> 
+        <!-- Dc.description meta keyword -->
+        <!-- InstanceBeginEditable name="metaData" -->
+        <meta name="DC.title" content="Learn the Issues: Climate Change"/>
+        <meta name="DC.description" content="The EME is a simple geospatial editor that allows users to create and edit records that meet the EPA Geospatial Metadata Technical Specification and Federal Geographic Data Committee 9FDGC) Content Standard for Digital Geospatial Meatadata (CSDGM) requirements."/>
+        <meta name="Keywords" content="Natural Resources,  global warming, (GHG) Emissions, Greenhouse Gases,Climate change,"/>
+        <!-- Dc.Title meta keyword -->
+        <meta name="DC.creator" content="US EPA EME"/>
+        <meta name="DC.type" content="Data &amp; Tools"/>
+        <meta name="DC.Subject.epachannel" content="Science &amp; Technology"/>
+            
+        <meta name="DC.date.created" content="2011-02-09"/>
+        <meta name="DC.date.modified" content="2012-12-06"/>
+        <meta name="DC.date.reviewed" content="2013-05-24"/>
+        <!-- InstanceEndEditable --> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+        <link type="application/rdf+xml" title="ICRA labels" rel="meta" href="http://www.epa.gov/labels.rdf"/>
+        <link type="application/atom+xml" title="EPA.gov News" rel="alternate" href="http://yosemite.epa.gov/opa/admpress.nsf/RSSRecentNews"/><link rel="alternate" type="application/atom+xml" title="EPA.gov Headquarters Press Releases" href="http://yosemite.epa.gov/opa/admpress.nsf/RSSByLocation?open&location=Headquarters" />
+        <link type="application/atom+xml" title="Greenversations, EPA's Blog" rel="alternate" href="http://blog.epa.gov/blog/feed/"/>
+            
+        <link rel="stylesheet" href="epa.css"/>  
+        <link rel="stylesheet" href="styles.css"/> 
+        <!--[if IE 7]><link rel="stylesheet" href="http://www.epa.gov/epafiles/templates/webcms/css/ie7.css"/><![endif]-->
+        <!--[if lt IE 7]><link rel="stylesheet" href="http://www.epa.gov/epafiles/templates/webcms/css/ie6.css"/><![endif]-->
+            
+        <script type="text/javascript" src="http://www.epa.gov/quickedit/quickedit.js"> </script>
+        <style type="text/css">
+            .navButton {width:20%; float:left; text-align:center; font-size:12px; font-weight:bold; background-color: #e6ecdc; padding-top:5px; padding-bottom:5px; margin-bottom:15px;}
+            body {font-family: Verdana, Geneva, sans-serif; color:#777777;}						
+        </style>
+        
+    </head>
+    <body class="rd"></body>        
+        
+        <!--googleoff: index--><p id="sitewidea"></p>
+        <p class="skip">Jump to <a title="Jump to main content" href="#main">main content
+            </a>
+        </p>
+        <div id="header">
+            <p>
+                <a title="US EPA Home Page" href="http://www.epa.gov/">
+                    <img src="http://www.epa.gov/epafiles/templates/webcms/css/i/print-epa-logo.gif" alt="US Environmental Protection Agency logo"/>
+                </a>
+                    
+            </p>
+            <!-- START AREA SEARCH -->
+            <form method="get" id="EPAsearch" action="http://nlquery.epa.gov/epasearch/epasearch">
+                <fieldset>
+                    <ol>
+                        <li id="azindex">
+                            <a title="Alphabetical list of top EPA topics" href="http://www.epa.gov/epahome/quickfinder.htm">A-Z Index</a>
+                        </li>
+                        <li>
+                            <a href="http://www.epa.gov/search.html">Advanced Search</a>
+                        </li>
+                        <li>
+                            <fieldset id="search">
+                                <legend>What are you looking for?</legend>
+                                <input value="" name="querytext" id="searchbox"/> 
+                                <button id="searchbutton" type="submit" title="Search" >
+                                    
+                                </button>
+                            </fieldset>
+                        </li>
+                    </ol>
+                    <input value="epa" type="hidden" name="typeofsearch"/>
+                    <input value="epahome" type="hidden" name="fld"/>
+                    <input value="Science &amp; Technology" type="hidden" name="areaname"/>
+                    <input value="http://www.epa.gov/epahome/comments3.htm" type="hidden" name="areacontacts"/>
+                    <input value="" type="hidden" name="areasearchurl"/>
+                    <input value="epafiles_default.xsl" type="hidden" name="result_template"/>
+                    <input value="sample4filt.hts" type="hidden" name="filter"/>
+                </fieldset>
+            </form>
+            <!-- END AREA SEARCH -->
+            <!-- IA Buckets-->
+            <ul>
+                <li id="learn">
+                    <a title="Learn the Issues" href="http://www.epa.gov/gateway/learn/">Learn the Issues</a>
+                </li>
+                <li id="scitech">
+                    <a title="Science and Technology" href="http://www.epa.gov/gateway/science/">Science &amp; Technology</a>
+                </li>
+                <li id="laws">
+                    <a title="Laws and Regulations" href="http://www.epa.gov/lawsregs/">Laws &amp; Regulations</a>
+                </li>
+                <li id="about">
+                    <a title="About EPA" href="http://www.epa.gov/aboutepa/">About EPA</a>
+                </li>
+            </ul>
+            <!-- END EPA HEADER -->
+        </div>
+        <div id="content" class="hp">
+            <div id="area" class="areahp">
+                <p>
+                    <a href="http://www.epa.gov/epahome/comments3.htm">Contact Us</a>
+                </p>
+            </div> 
+            <div id="page">
+                
+                <div id="main">
+                    <!-- BEGIN CONTENT -->
+                    <!-- BEGIN PAGE NAME -->
+                    <!--googleon: index-->
+                    <h1>EPA Metadata Editor</h1>
+                    <!-- END PAGE NAME -->
+                    <div style="float:left; width:700px;">
+                        
+                        <!-- InstanceBeginEditable name="banner" -->			
+                        <div id="headline" style="border-right: 0px; border-top: 0px; border-left: 0px; width: 700px; border-bottom: 0px">
+                            <div id="banner" style="border-right: 0px; border-top: 0px; border-left: 0px; width: 700px; border-bottom: 0px">
+                                <div style="background: url(images/eme_about.png) no-repeat; width:700px; height:200px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial">
+                                </div><!-- end div style box -->
+                            </div><!-- end banner div -->
+                        </div><!-- end headline div -->
+                            
+                        <!-- InstanceEndEditable -->	
+                            
+                        <br>
+                            
+                        <div style="width:100%;">
+                            <div style="background-color: #3f8aab; color:#FFF; font-size:14px; padding:5px; font-weight:bold;">EME Quick Links</div>
+                            <div class="navButton"><a href="index.html">EME Home</a></div>
+                            <div class="navButton"><a href="download.html">Download</a></div>
+                            <div class="navButton"><a href="about.html">About</a></div>
+                            <div class="navButton"><a href="usage.html">Usage</a></div>
+                            <div class="navButton"><a href="resources.html">Resources</a></div>
+                        </div>
+                            
+                        <!-- InstanceBeginEditable name="content" -->
+                        <p style="color: #d53333; font-size:20px;">Background</p>
+                            
+                        <p>Creating metadata has been a challenge for agencies across the US for many years, often due to lack of tools that provide a simple editing interface that meets all requirements. To address this challenge, the EPA developed the EPA Metadata Editor (EME) in 2006. Its streamlined design, integrated help system, and use of defaults and drop-downs simplify the process of creating metadata that meets FGDC requirements.</p>
+                            
+                        <p>The EME is compatible with ArcGIS 10 and can be used either as an ArcCatalog extension or a standalone tool. Key features of the EME include a customizable synchronizer and an EPA validation tool.</p>
+                            
+                        <p><strong><a href="pdfs/EME_FactSheet.pdf">Download the EME Fact Sheet</a>.</strong></p>
+                            
+                            
+                            
+                            
+                        <!-- InstanceEndEditable --> 
+                    </div> 
+                </div>
+                    
+                    
+                <div style="float:right; width:200px; margin-right:10px;">
+                    <div class="boxmulti">
+                        <h5>Contact Us Online</h5>
+                        <p align="center"> For more information, please <a href="mailto:Edg@epa.gov">contact EDG</a>.</p>
+                    </div>
+                        
+                    <div class="boxmulti">
+                        <h5>Hot Topics</h5>
+                        <ul>
+                            <li><a href="download.html">Download EME v3.1.2</a></li>
+                            <li><a href="pdfs/EME_FactSheet.pdf">EME Fact Sheet</a></li>
+                            <li><a href="resources.html">2012 EME Training Sessions</a></li>
+                        </ul>
+                    </div>
+                    <!-- InstanceBeginEditable name="boxes" -->
+                    <div class="boxmulti">
+                        <h5>EME Technology Details</h5>
+                        <ul><strong>EME Installation Prerequisites:</strong> <br>
+                            <!-- #BeginLibraryItem "/Library/Exit.lbi" --><a  target="_blank" href="http://www.epa.gov/epahome/exitepa.htm" title="EPA's External Link Disclaimer" name="plain" id="plain"><img src="http://www.epa.gov/epafiles/images/epafiles_misc_exitepadisc.gif" width="87" height="13" alt="Exit EPA Disclaimer" /></a> <!-- #EndLibraryItem -->
+                            <li><a href="http://www.microsoft.com/download/en/details.aspx?id=21" target="_blank">Microsoft .NET Framework 3.5 </a></li>
+                            <li><a href="http://www.esri.com" target="_blank">ArcGIS 10* (or higher)</a> </li>
+                            <li><a href="http://resources.arcgis.com/content/patches-and-service-packs?fa=viewPatch&PID=160&MetaID=1637" target="_blank">FGDC Patch for ArcGIS*</a><br /> 
+                                <span style="font-size:75%;">*Only required for EME as an ArcGIS extension</span></li>
+                        </ul>
+                            
+                        <ul><strong>EME Technology Stack:</strong>
+                            <li>Microsoft Visual Studio 2010 (VB.NET)</li> 
+                            <li>Microsoft .NET framework 3.5 </li>
+                            <li>ArcCatalog 10 </li>
+                            <li>Microsoft Access </li>
+                        </ul>
+                    </div>
+                        
+                        
+                    <!-- InstanceEndEditable -->
+                </div>
+                <!-- END CONTENT -->
+                <!--Added by Netty-->
+                <div style="clear:both"></div>
+                <div style="float:left; width:700px;padding-left:12px">
+                    <p style="color: #d53333; font-size:20px;">Key EME Dates</p>
+                    <div class="boxWithShadow">
+                        <div id="tl" class="timeline-default" style="height: 240px;width:940px"></div>
+                        <div style="clear: both; height: 10px;"></div>
+                        <div style="text-align: center;">
+                            <span style="background-color: red;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;AWARD</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span style="background-color: green;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;FEATURE</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span style="background-color: blue;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;RELEASE</span>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!--<img src="images/eme_timeline.png" alt="EME Timeline. See text below for more information." width="940" />-->
+                    <ul>
+                        <li><strong>February 15, 2013: </strong>EME version 3.2 released</li>
+                        <li><strong>November 10, 2011:</strong> EME version 3.1.2 released</li>
+                        <li><strong>July 27, 2011: </strong>EME version 3.1.1 released</li>
+                        <li><strong>April 1, 2011:</strong> EME version 3.1 released</li>
+                        <li><strong>October 31, 2008: </strong>EME version 3.0 released</li>
+                        <li><strong>October 20, 2008: </strong><a href="http://gcn.com/articles/2008/10/17/epas-metadatamorphosis.aspx" target="_blank">Government Computer News (GCN) 2008 Agency Award</a> <!-- #BeginLibraryItem "/Library/Exit.lbi" --><a  target="_blank" href="http://www.epa.gov/epahome/exitepa.htm" title="EPA's External Link Disclaimer" name="plain" id="plain"><img src="http://www.epa.gov/epafiles/images/epafiles_misc_exitepadisc.gif" width="87" height="13" alt="Exit EPA Disclaimer" /></a> <!-- #EndLibraryItem --></li>
+                        <li><strong>September 2007:</strong> <a href="http://www.esri.com/news/arcuser/0807/metadata_editor.html" target="_blank"> ArcUser Magazine features EME <!-- #BeginLibraryItem "/Library/Exit.lbi" --><a  target="_blank" href="http://www.epa.gov/epahome/exitepa.htm" title="EPA's External Link Disclaimer" name="plain" id="plain"><img src="http://www.epa.gov/epafiles/images/epafiles_misc_exitepadisc.gif" width="87" height="13" alt="Exit EPA Disclaimer" /></a><!-- #EndLibraryItem --></li>
+                        <li><strong>July 3, 2007: </strong>EME version 2.1 released</li>
+                        <li><strong>June 22, 2007: </strong>EME wins first place for Best Embedded GIS Application at the ESRI Software Applications Fair</li>
+                        <li><strong>May 1, 2007:</strong> EME version 2.0 released</li>
+                        <li><strong>July 28, 2006:</strong> EME version 1.0 released</li>
+                    </ul>
+                        
+                </div>
+            </div> 
+        </div>
+        <!-- BEGIN FOOTER -->
+        <div id="footer">
+            <ul id="goodies">
+                <li id="rss-news">
+                    <a href="http://www.epa.gov/newsroom/rssfeeds.htm">News Feeds</a>
+                </li>
+                <li id="podcasts">
+                    <a href="http://www.epa.gov/epahome/podcasts.htm">Podcasts</a>
+                </li>
+                <li id="mobile">
+                    <a href="http://m.epa.gov/">EPA Mobile</a>
+                </li>
+                <li id="email-news">
+                    <a href="http://www.epa.gov/newsroom/email_signups.htm">News by Email</a>
+                </li>
+                <li id="widgets">
+                    <a href="http://www.epa.gov/widgets/">Widgets</a>
+                </li>
+            </ul>
+            <ul id="globalfooter">
+                <li>
+                    <a href="http://www.epa.gov/">EPA Home</a>
+                </li>
+                <li>
+                    <a href="http://www.epa.gov/epafiles/usenotice.htm">Privacy and Security Notice</a>
+                </li>
+                <li class="last">
+                    <a href="http://www.epa.gov/epahome/comments3.htm">Contact Us</a>
+                </li>
+            </ul>
+            <p id="wcmswatermark">WCMS</p>
+            <p id="seal">The Seal of the United States Environmental Protection Agency</p>
+        </div>
+        <p class="skip">
+            <a title="Jump to main content." href="#content">Jump to main content.</a>
+        </p>
+        <!-- END FOOTER -->
+        <script type="text/javascript" src="http://www.epa.gov/epafiles/js/third-party/jquery.js"> </script>
+        <script type="text/javascript" src="http://www.epa.gov/epafiles/js/epa-core-v4.js"> </script>
+        <script type="text/javascript" src="javaScripts/addMenuItems.js"> </script>
+        <!-- Begin: page related java script -->
+        <!-- End: page related java script -->
+        <!-- BEGIN CP Specific tag -->
+<!--        <script type="text/javascript">displayToolkit("0901efcc80198ac0","status|submittoworkflow|viewproperties|createnewpage|multimport"); </script>
+        <script type="text/javascript">quickEditForm("0901efcc80198ac0","/root",false,"../forms/210_basic_two_column","","700px","900px","RD Tropo","","pencil.gif",""); </script>-->
+        <!-- END CP Specific tag-->
+    </body>
+    <!-- InstanceEnd --></html>
